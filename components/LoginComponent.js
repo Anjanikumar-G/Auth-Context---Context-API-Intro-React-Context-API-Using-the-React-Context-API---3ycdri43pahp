@@ -1,9 +1,7 @@
 "use client"
-import { useAuth } from '../contexts/AuthContext';
-
+import { useAuth } from '../contexts/AuthContext'; // Fixed import
 const LoginComponent = () => {
     const { isLoggedIn, login, logout } = useAuth();
-
     return (
         <div>
             {isLoggedIn ? (
@@ -21,5 +19,4 @@ const LoginComponent = () => {
         </div>
     );
 };
-
 export default LoginComponent;
